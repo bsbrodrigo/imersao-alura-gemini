@@ -45,6 +45,10 @@ section input {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
+section input:focus {
+    outline: none;
+}
+
 /* Estiliza os botões dentro das seções */
 section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
@@ -54,13 +58,14 @@ section button {
     color: #000000; opacity: 1; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao hover */ 
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color: #f3f3f322; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(246, 245, 245, 0.486); 
-    /* Adiciona uma sombra mais intensa */
+    background-color: #ffffff76; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(246, 245, 245, 0.486);
+    /* Adiciona uma sombra mais intensa */    
 
 }
 
@@ -131,6 +136,7 @@ footer {
     section input {
         width: 25rem; /* Largura dos inputs em telas menores */
         padding: 0.8rem; /* Espaçamento interno em telas menores */
+        
     }
 
     .resultados-pesquisa {
@@ -221,4 +227,8 @@ nav a {
 
 nav a:hover {
     background-color: #ffffff76; /* Altera a cor de fundo ao passar o mouse */
+}
+
+p {
+    color: white;
 }
