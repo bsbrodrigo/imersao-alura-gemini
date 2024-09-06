@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fluminense F.C.</title>
+    <link rel="icon" href="./images/logoflu.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ELENCO</a></li>
+                <li><a href="#">NOTÍCIAS</a></li>
+                <li><a href="#">SHOP</a></li>                       
+                
+            </ul>
+        </nav>
+
+        <h1>ELENCO</h1>
+    </header>
+
+        <section>
+        <input type="text" name="busca" placeholder="Digite o nome do atleta">
+        <button onclick="pesquisar()">PESQUISAR</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- <div class="item-resultado">
+
+                <h2>
+                    <img src="./images/marcelo.png" alt="Marcelo">
+                    
+                <a href="https://www.instagram.com/marcelotwelve/" target="_blank">Marcelo</a>
+                </h2> 
+              
+                <p class="descricao-meta">Marcelo Vieira da Silva Júnior é um dos maiores laterais-esquerdos da história do futebol mundial. Revelado nas categorias de base do Fluminense, o carioca conquistou o mundo com a camisa do Real Madrid. Após uma carreira vitoriosa na Europa, Marcelo retornou ao seu clube de coração em 2023, onde rapidamente se tornou peça fundamental do time. Sua habilidade, experiência e liderança foram cruciais para as conquistas do Campeonato Carioca, da Libertadores e da Recopa Sul-Americana.</p>
+                <a href="https://pt.wikipedia.org/wiki/Marcelo_Vieira_da_Silva_J%C3%BAnior" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/jkennedy.png" alt="John Kennedy">
+                    <a href="https://www.instagram.com/jkennedy/" target="_blank">John Kennedy</a>
+                </h2>
+                <p class="descricao-meta">Atacante promissor revelado nas categorias de base do Fluminense, conhecido por sua velocidade e dribles. Destacou-se nas competições de base e já é considerado uma das grandes promessas do futebol brasileiro.</p>
+                <a href="https://pt.wikipedia.org/wiki/John_Kennedy_(futebolista)" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/thiagosilva.png" alt="Thiago Silva">
+                    <a href="#" target="_blank">Thiago Silva</a>
+                </h2>
+                <p class="descricao-meta">Zagueiro experiente e líder nato, Thiago Silva é conhecido por sua firmeza na marcação e sua habilidade com a bola nos pés. Com passagens por grandes clubes europeus, como Milan e Paris Saint-Germain, o defensor voltou ao Brasil para defender o Fluminense.</p>
+                <a href="https://pt.wikipedia.org/wiki/Thiago_Silva_(futebolista)" target="_blank">Mais informações</a>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/serna.png" alt="Kevin Serna">
+                    <a href="#" target="_blank">Kevin Serna</a>
+                </h2>
+                <p class="descricao-meta">Meia colombiano com grande visão de jogo, Kevin Serna chegou ao Fluminense em 2023 e rapidamente se adaptou ao futebol brasileiro. Sua habilidade para distribuir passes e sua capacidade de finalização são suas principais características.</p>
+                <a href="#" target="_blank">Mais informações</a>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/arias.png" alt="John Arias">
+                    <a href="#" target="_blank">John Arias</a>
+                </h2>
+                <p class="descricao-meta">Extremo colombiano com grande velocidade e habilidade individual, John Arias é uma das principais armas do ataque do Fluminense. Sua capacidade de driblar e criar jogadas perigosas é fundamental para o time.</p>
+                <a href="#" target="_blank">Mais informações</a>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/germancano.png" alt="Germán Cano">
+                    <a href="#" target="_blank">Germán Cano</a>
+                </h2>
+                <p class="descricao-meta">Artilheiro argentino, Germán Cano é um dos principais nomes do futebol brasileiro. Conhecido por sua oportunismo e faro de gol, o atacante é ídolo da torcida tricolor.</p>
+                <a href="https://pt.wikipedia.org/wiki/Germán_Cano" target="_blank">Mais informações</a>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/felipemelo.png" alt="Felipe Melo">
+                    <a href="#" target="_blank">Felipe Melo</a>
+                </h2>
+                <p class="descricao-meta">Volante experiente e combativo, Felipe Melo é conhecido por sua liderança dentro de campo e sua capacidade de desarmar os adversários. Com passagens por grandes clubes europeus, como Juventus e Inter de Milão, o volante chegou ao Fluminense em 2021.</p>
+                <a href="https://pt.wikipedia.org/wiki/Felipe_Melo" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/bernal.png" alt="Facundo Bernal">
+                    <a href="#" target="_blank">Facundo Bernal</a>
+                </h2>
+                <p class="descricao-meta">Facundo Bernal Cruz (nascido em 21 de agosto de 2003) é um futebolista profissional uruguaio que atua como meio-campista.</p>
+                <a href="#" target="_blank">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/keno.png" alt="Keno">
+                    <a href="#" target="_blank">Keno</a>
+                </h2>
+                <p class="descricao-meta">Marcos da Silva França, conhecido como Keno (Salvador, 10 de setembro de 1989), é um futebolista brasileiro que atua como ponta.</p>
+                <a href="#" target="_blank">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/ganso.png" alt="PH Ganso">
+                    <a href="#" target="_blank">Paulo Henrique Ganso</a>
+                </h2>
+                <p class="descricao-meta">Paulo Henrique de Chagas Lima (Ananindeua, 12 de outubro de 1989), mais conhecido como Ganso, é um futebolista brasileiro que atua como meio-campista.</p>
+                <a href="https://pt.wikipedia.org/wiki/Paulo_Henrique_Ganso">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/kauaelias.png" alt="Kauã Elias">
+                    <a href="#" target="_blank">Kauã Elias</a>
+                </h2>
+                <p class="descricao-meta">Kauã Elias Nogueira, mais conhecido como Kauã Elias (Uberlândia, 28 de março de 2006), é um futebolista brasileiro que atua como centroavante.</p>
+                <a href="https://pt.wikipedia.org/wiki/Kau%C3%A3_Elias">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/thiagosantos.png" alt="Thiago Santos">
+                    <a href="#" target="_blank">Thiago Santos</a>
+                </h2>
+                <p class="descricao-meta">Thiago dos Santos, mais conhecido como Thiago Santos, (Curitiba, 5 de setembro de 1989) é um futebolista brasileiro que atua como volante ou zagueiro. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/fabio.png" alt="Fabio">
+                    <a href="#" target="_blank">Fábio</a>
+                </h2>
+                <p class="descricao-meta">Fábio Deivson Lopes Maciel (nascido em 30 de setembro de 1980), conhecido simplesmente como Fábio , é um futebolista brasileiro que atua como goleiro.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/renatoaugusto.png" alt="Renato Augusto">
+                    <a href="#" target="_blank">Renato Augusto</a>
+                </h2>
+                <p class="descricao-meta">Renato Soares de Oliveira Augusto (Rio de Janeiro, 8 de fevereiro de 1988) é um futebolista brasileiro que atua como meio-campista.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/nonato.png" alt="Nonato">
+                    <a href="#" target="_blank">Nonato</a>
+                </h2>
+                <p class="descricao-meta">Gustavo Nonato Santana (nascido em 3 de março de 1998), mais conhecido como Nonato , é um futebolista brasileiro que atua como meio-campista. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/gabrielpires.png" alt="gabriel pires">
+                    <a href="#" target="_blank">Gabriel Pires</a>
+                </h2>
+                <p class="descricao-meta">Gabriel Appelt Pires, mais conhecido como Gabriel Pires (Rio de Janeiro, 18 de setembro de 1993), é um futebolista luso-brasileiro que atua como meio-campista.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/marquinhos.png" alt="marquinhos">
+                    <a href="#" target="_blank">Marquinhos</a>
+                </h2>
+                <p class="descricao-meta">Marcus Vinicius Oliveira Alencar, mais conhecido como Marquinhos (São Paulo, 7 de abril de 2003), é um futebolista brasileiro que atua como ponta direita.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/martinelli.png" alt="martinelli">
+                    <a href="#" target="_blank">Martinelli</a>
+                </h2>
+                <p class="descricao-meta">Matheus Martinelli Lima (nascido em 5 de outubro de 2001), conhecido como Matheus Martinelli ou apenas Martinelli , é um futebolista brasileiro que atua como meio-campista. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/terans.png" alt="terans">
+                    <a href="#" target="_blank">David Terans</a>
+                </h2>
+                <p class="descricao-meta">Miguel David Terans Pérez (nascido em 11 de agosto de 1994), conhecido como David Terans , é um futebolista profissional uruguaio, principalmente um atacante e também pode jogar como um meia-atacante.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/guga.png" alt="guga">
+                    <a href="#" target="_blank">Guga</a>
+                </h2>
+                <p class="descricao-meta">Cláudio Rodrigues Gomes (Rio de Janeiro, 29 de agosto de 1998), conhecido apenas como Guga, é um futebolista brasileiro que atua como lateral-direito.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/diogobarbosa.png" alt="diogo barbosa">
+                    <a href="#" target="_blank">Diogo Barbosa</a>
+                </h2>
+                <p class="descricao-meta">Diogo Barbosa Mendanha (Terra Nova do Norte, 17 de agosto de 1992) é um futebolista brasileiro que atua como lateral esquerdo.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/janlucumi.png" alt="lucumi">
+                    <a href="#" target="_blank">Jan Lucumí</a>
+                </h2>
+                <p class="descricao-meta">Jan Franc Lucumí González (nascido em 11 de fevereiro de 2004) é um futebolista colombiano que atua como ponta-direita. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/samuelxavier.png" alt="samuel xavier">
+                    <a href="#" target="_blank">Samuel Xavier</a>
+                </h2>
+                <p class="descricao-meta">Samuel Xavier Brito (São Paulo, nasceu em 6 de junho de 1990) é um futebolista brasileiro que atua como lateral-direito. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/antoniocarlos.png" alt="antonio carlos">
+                    <a href="#" target="_blank">Antônio Carlos</a>
+                </h2>
+                <p class="descricao-meta">Antônio Carlos Cunha Capocasali Júnior (nascido em 7 de março de 1993), conhecido como Antônio Carlos , é um futebolista brasileiro que atua como zagueiro. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/ignacio.png" alt="ignacio">
+                    <a href="#" target="_blank">Ignácio</a>
+                </h2>
+                <p class="descricao-meta">Ignácio da Silva Oliveira (nascido em 1 de dezembro de 1996), simplesmente conhecido como Ignácio , é um futebolista brasileiro que atua como zagueiro. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/lele.png" alt="lele">
+                    <a href="#" target="_blank">Lelê</a>
+                </h2>
+                <p class="descricao-meta">Leanderson da Silva Genésio (nascido em 1 de outubro de 1997), mais conhecido como Lelê , é um futebolista brasileiro que atua como atacante. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/isaac.png" alt="isaac">
+                    <a href="#" target="_blank">Isaac</a>
+                </h2>
+                <p class="descricao-meta">Isaac Rodrigues de Lima (nascido em 24 de abril de 2004), conhecido como Isaac , é um futebolista brasileiro que atua como atacante. </p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/felipeandrade.png" alt="felipe andrade">
+                    <a href="#" target="_blank">Felipe Andrade</a>
+                </h2>
+                <p class="descricao-meta">Felipe de Andrade Vieira (nascido em 29 de maio de 2002), conhecido como Felipe Andrade , é um futebolista brasileiro que atua como zagueiro.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/manoel.png" alt="manoel">
+                    <a href="#" target="_blank">Manoel</a>
+                </h2>
+                <p class="descricao-meta">Manoel Messias Silva Carvalho (nascido em 26 de fevereiro de 1990), conhecido simplesmente como Manoel , é um futebolista profissional brasileiro que atua como zagueiro.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/vitoreudes.png" alt="vitor eudes">
+                    <a href="#" target="_blank">Vitor Eudes</a>
+                </h2>
+                <p class="descricao-meta">Vitor Eudes de Souza Costa (nascido em 21 de outubro de 1998), mais conhecido como Vitor Eudes , é um futebolista profissional brasileiro que atua como goleiro.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/lima.png" alt="lima">
+                    <a href="#" target="_blank">Lima</a>
+                </h2>
+                <p class="descricao-meta">Vinícius Moreira de Lima, mais conhecido apenas como Lima (Araçatuba, 11 de junho de 1996), é um futebolista brasileiro que atua como ponta-direita e meio-campista.</p>
+                <a href="#">Mais informações</a>
+            </div>
+            <div class="item-resultado">
+                <h2>
+                    <img src="./images/felipealves.png" alt="felipe alves">
+                    <a href="#" target="_blank">Felipe Alves</a>
+                </h2>
+                <p class="descricao-meta">Felipe Alves Raymundo (São Paulo, nasceu em 21 de maio de 1988) é um futebolista brasileiro que atua como goleiro. </p>
+                <a href="#">Mais informações</a>
+            </div> -->
+
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Atletas do Fluminense Football Club. Todos os direitos reservados. © 2024 
+        </p>
+
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
